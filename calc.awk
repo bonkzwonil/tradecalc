@@ -1,3 +1,11 @@
+#!/bin/env -S awk -f
+#
+# Calculate Trades. 
+# Format:
+# Date	Type	Symbol	Amount	Price	Fees
+#
+# 2021-11-24T16:29:40+0100 Trade           AA     100      -50.09        -0.08
+
 BEGIN { symbol = 0; pnl=0;}
 { 
  sym = $3;
